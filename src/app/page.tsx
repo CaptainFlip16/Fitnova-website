@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isAnnual, setIsAnnual] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -120,45 +121,45 @@ export default function Home() {
 <div className="container-max mx-auto px-6 md:px-12">
 <div className="flex justify-between items-end mb-16">
 <h2 className="font-headline-lg text-headline-lg max-w-xl">Services That Shape a <span className="italic font-emphasis-italic text-primary-container">Healthier</span> You</h2>
-<Link className="hidden md:block font-label-caps text-label-caps text-secondary hover:text-on-background transition-colors" href="#">View All Services</Link>
+<Link className="hidden md:block font-label-caps text-label-caps text-secondary hover:text-on-background transition-colors" href="/services">View All Services</Link>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
 
-<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group">
+<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group cursor-pointer" onClick={() => window.location.href='/services'}>
 <span className="material-symbols-outlined text-4xl text-primary-container mb-6 group-hover:scale-110 transition-transform">fitness_center</span>
 <h3 className="font-headline-md text-on-background mb-4">Personal Training</h3>
 <p className="font-body-md text-secondary mb-6">One-on-one sessions tailored to your specific body mechanics and athletic goals.</p>
-<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="#">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
+<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="/services">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
 </div>
-<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group">
+<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group cursor-pointer" onClick={() => window.location.href='/services'}>
 <span className="material-symbols-outlined text-4xl text-primary-container mb-6 group-hover:scale-110 transition-transform">nutrition</span>
 <h3 className="font-headline-md text-on-background mb-4">Nutrition Plans</h3>
 <p className="font-body-md text-secondary mb-6">Customized meal strategies designed by certified nutritionists to fuel your lifestyle.</p>
-<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="#">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
+<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="/services">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
 </div>
-<div className="bg-primary-container p-10 rounded-xl shadow-xl transition-all group">
+<div className="bg-primary-container p-10 rounded-xl shadow-xl transition-all group cursor-pointer" onClick={() => window.location.href='/services'}>
 <span className="material-symbols-outlined text-4xl text-white mb-6 group-hover:scale-110 transition-transform">self_improvement</span>
 <h3 className="font-headline-md text-white mb-4">Yoga &amp; Flow</h3>
 <p className="font-body-md text-white/90 mb-6">Connect movement with breath in our signature mobility and mindfulness sessions.</p>
-<Link className="flex items-center gap-2 font-label-caps text-label-caps text-white group-hover:translate-x-2 transition-transform" href="#">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
+<Link className="flex items-center gap-2 font-label-caps text-label-caps text-white group-hover:translate-x-2 transition-transform" href="/services">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
 </div>
-<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group">
+<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group cursor-pointer" onClick={() => window.location.href='/services'}>
 <span className="material-symbols-outlined text-4xl text-primary-container mb-6 group-hover:scale-110 transition-transform">directions_run</span>
 <h3 className="font-headline-md text-on-background mb-4">Cardio Blast</h3>
 <p className="font-body-md text-secondary mb-6">High-intensity interval training protocols that push your cardiovascular limits.</p>
-<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="#">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
+<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="/services">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
 </div>
-<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group">
+<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group cursor-pointer" onClick={() => window.location.href='/services'}>
 <span className="material-symbols-outlined text-4xl text-primary-container mb-6 group-hover:scale-110 transition-transform">favorite</span>
 <h3 className="font-headline-md text-on-background mb-4">Wellness Coaching</h3>
 <p className="font-body-md text-secondary mb-6">Holistic lifestyle adjustments focusing on sleep, stress, and recovery habits.</p>
-<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="#">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
+<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="/services">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
 </div>
-<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group">
+<div className="bg-white p-10 rounded-xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-primary-container/20 group cursor-pointer" onClick={() => window.location.href='/services'}>
 <span className="material-symbols-outlined text-4xl text-primary-container mb-6 group-hover:scale-110 transition-transform">video_camera_front</span>
 <h3 className="font-headline-md text-on-background mb-4">Online Coaching</h3>
 <p className="font-body-md text-secondary mb-6">Remote access to our world-class trainers and customized training app.</p>
-<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="#">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
+<Link className="flex items-center gap-2 font-label-caps text-label-caps text-on-background group-hover:text-primary-container" href="/services">Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span></Link>
 </div>
 </div>
 </div>
@@ -168,11 +169,7 @@ export default function Home() {
 <div className="container-max mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-20">
 <div className="w-full md:w-1/2 relative">
 <div className="relative rounded-xl overflow-hidden shadow-2xl">
-<img className="w-full h-[600px] object-cover" data-alt="A focused athlete lifting heavy iron weights in a dimly lit, professional powerlifting gym. The scene focuses on the grit and determination, with intense light highlighting the strain and focus. A translucent UI element overlays the image showing a 96 percent progress metric in a sleek, digital typography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_0SDoCT_1rKBtzx52kkAUnZyvwOOxC5lU4YmTSxHWvIS2q6WF4RnkLlJbCt8CIBa6j3sOdotXXB6z4SMbAiCL-HnuHxJuU_EUIjsx-I-3DYr_V2rwrzLSewGxKXt37cSFex37Z1oe8Sd7uEEP6bKrCTgrkupoa1r1Lmj3ao_1q16izJk4WZXdr73sK-aNIMrEVbaQHzJNzezvbjO1wb7gW_HzK96JaKHlqw61__sL5fqsXz5u5stbB_nahD6aihkX5csx2q_8RbI"/>
-<div className="absolute top-12 left-12 bg-white/10 glass-effect p-8 rounded-2xl border border-white/20">
-<div className="text-white text-5xl font-black mb-2">96%</div>
-<p className="text-white/80 font-label-caps text-xs tracking-[0.2em]">PROGRESS COMPLETED</p>
-</div>
+<img className="w-full h-[600px] object-cover" data-alt="A focused athlete lifting heavy iron weights in a dimly lit, professional powerlifting gym. The scene focuses on the grit and determination, with intense light highlighting the strain and focus. A translucent UI element overlays the image showing a 96 percent progress metric in a sleek, digital typography style." src="/images/powerlifter.png"/>
 </div>
 </div>
 <div className="w-full md:w-1/2">
@@ -222,19 +219,20 @@ export default function Home() {
 <div className="container-max mx-auto px-6 md:px-12 text-center">
 <h2 className="font-headline-lg text-headline-lg mb-stack-md">Our Pricing Plan For You</h2>
 <div className="flex justify-center items-center gap-6 mb-16">
-<span className="font-label-caps text-label-caps text-on-background">Monthly</span>
-<button className="w-14 h-8 bg-zinc-300 rounded-full relative p-1 flex items-center">
-<div className="w-6 h-6 bg-white rounded-full shadow-sm translate-x-6 bg-primary-container transition-transform"></div>
+<span className={`font-label-caps text-label-caps ${!isAnnual ? 'text-on-background' : 'text-secondary'}`}>Monthly</span>
+<button onClick={() => setIsAnnual(!isAnnual)} className={`w-14 h-8 rounded-full relative p-1 flex items-center transition-colors duration-300 ${isAnnual ? 'bg-primary-container' : 'bg-zinc-300'}`}>
+<div className={`w-6 h-6 bg-white rounded-full shadow-sm transition-transform duration-300 ${isAnnual ? 'translate-x-6' : 'translate-x-0'}`}></div>
 </button>
-<span className="font-label-caps text-label-caps text-secondary">Annual <span className="text-primary-container">(Save 20%)</span></span>
+<span className={`font-label-caps text-label-caps ${isAnnual ? 'text-primary-container' : 'text-secondary'}`}>Annual <span className="text-primary-container">(Save 20%)</span></span>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter items-stretch">
 
 <div className="bg-white p-12 rounded-xl shadow-sm border border-zinc-100 flex flex-col">
 <h3 className="font-label-caps text-label-caps text-secondary mb-6">Kickstart</h3>
 <div className="mb-8">
-<span className="text-5xl font-black">$299</span>
+<span className="text-5xl font-black">{isAnnual ? '$39' : '$49'}</span>
 <span className="text-secondary">/mo</span>
+<div className={`text-[10px] text-primary-container font-bold uppercase tracking-wider ${isAnnual ? 'block' : 'hidden'} mt-2`}>Billed Annually</div>
 </div>
 <ul className="text-left space-y-4 mb-12 flex-grow">
 <li className="flex items-center gap-3"><span className="material-symbols-outlined text-primary-container">check_circle</span> Unlimited Gym Access</li>
@@ -249,8 +247,9 @@ export default function Home() {
 <div className="absolute top-0 right-12 translate-y-[-50%] bg-primary-container text-white px-4 py-1 rounded-full font-label-caps text-[10px]">MOST POPULAR</div>
 <h3 className="font-label-caps text-label-caps text-primary-container mb-6">Transform</h3>
 <div className="mb-8">
-<span className="text-5xl font-black">$310</span>
+<span className="text-5xl font-black">{isAnnual ? '$69' : '$89'}</span>
 <span className="text-zinc-400">/mo</span>
+<div className={`text-[10px] text-primary-container font-bold uppercase tracking-wider ${isAnnual ? 'block' : 'hidden'} mt-2`}>Billed Annually</div>
 </div>
 <ul className="text-left space-y-4 mb-12 flex-grow">
 <li className="flex items-center gap-3"><span className="material-symbols-outlined text-primary-container">check_circle</span> All Kickstart Benefits</li>
@@ -264,8 +263,9 @@ export default function Home() {
 <div className="bg-white p-12 rounded-xl shadow-sm border border-zinc-100 flex flex-col">
 <h3 className="font-label-caps text-label-caps text-secondary mb-6">Elite</h3>
 <div className="mb-8">
-<span className="text-5xl font-black">$499</span>
+<span className="text-5xl font-black">{isAnnual ? '$119' : '$149'}</span>
 <span className="text-secondary">/mo</span>
+<div className={`text-[10px] text-primary-container font-bold uppercase tracking-wider ${isAnnual ? 'block' : 'hidden'} mt-2`}>Billed Annually</div>
 </div>
 <ul className="text-left space-y-4 mb-12 flex-grow">
 <li className="flex items-center gap-3"><span className="material-symbols-outlined text-primary-container">check_circle</span> Full Facility Access</li>
